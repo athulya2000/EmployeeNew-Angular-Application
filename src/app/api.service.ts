@@ -10,4 +10,8 @@ export class ApiService {
   fetchEmployee=()=>{
     return this.http.get("http://localhost:8080/viewall")
   }
+  addEmployee=(dataToSend:any)=>{
+    return this.http.post("http://localhost:8080/add",dataToSend)
+
+  }
 }
